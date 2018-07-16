@@ -89,7 +89,7 @@ describe('GET /todos/id', () => {
         done();
       });
   });
-  //
+
   it('should return 404 if todo not found', (done) => {
     let hexId = new ObjectID().toHexString();
     request(app)
